@@ -1,0 +1,5 @@
+idlj -fall Reverse.idl
+javac ReverseModule/*.java *.java
+tnameserv -ORBInitialPort 1050
+java ReverseServer -ORBInitialPort 1050 -ORBInitialHost localhost or Server IP
+java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost or Server IP
